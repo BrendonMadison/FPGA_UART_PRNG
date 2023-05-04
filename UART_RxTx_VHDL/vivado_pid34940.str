@@ -1,0 +1,2820 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 05:00:03 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 34940
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon May 01 10:03:53 CDT 2023
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 3840x2160
+Screen resolution (DPI): 150
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	bmad4
+User home directory: C:/Users/bmad4
+User working directory: C:/Users/bmad4/Documents/UART_RxTx
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: C:/Users/bmad4/AppData/Roaming/Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: C:/Users/bmad4/AppData/Roaming/Xilinx/Vivado/2022.2/
+Vivado layouts directory: C:/Users/bmad4/AppData/Roaming/Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/bmad4/Documents/UART_RxTx/vivado.log
+Vivado journal file: 	C:/Users/bmad4/Documents/UART_RxTx/vivado.jou
+Engine tmp dir: 	C:/Users/bmad4/Documents/UART_RxTx/.Xil/Vivado-34940-Big-Daddy
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent31508 "C:\Users\bmad4\Documents\UART_RxTx\UART_RxTx.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_INSTALLVERSION: 2022.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2022.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2022.2/tps/win64/javafx-sdk-11.0.2
+RDI_JAVAROOT: C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: C:/Xilinx/Vivado/2022.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2022.2/tps/win64
+RDI_USE_JDK11: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2022.2\bin
+_RDI_CWD: C:\Users\bmad4\Documents\UART_RxTx
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 872 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\bmad4\Documents\UART_RxTx\UART_RxTx.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 88 MB. Current time: 5/1/23, 10:03:55 AM CDT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 140 MB (+144474kb) [00:00:11]
+// [Engine Memory]: 959 MB (+854551kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1815 ms.
+// Tcl Message: open_project C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// [Engine Memory]: 1,014 MB (+6795kb) [00:00:12]
+// Project name: UART_RxTx; location: C:/Users/bmad4/Documents/UART_RxTx; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1149.891 ; gain = 321.301 
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 152 MB (+4829kb) [00:00:16]
+// Elapsed time: 14 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // f
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 20, false); // f
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,140 MB (+78662kb) [00:00:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,187 MB. GUI used memory: 91 MB. Current time: 5/1/23, 10:04:20 AM CDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 91 MB. Current time: 5/1/23, 10:04:31 AM CDT
+// [Engine Memory]: 2,054 MB (+898769kb) [00:00:47]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,169 MB (+12854kb) [00:00:47]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1366 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1517.516 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2022.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2212.207 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2212.207 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.207 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2367.938 ; gain = 1204.289 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 165 MB (+6226kb) [00:00:49]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 174 MB (+333kb) [00:00:50]
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// Elapsed time: 20 seconds
+dismissDialog("Open Implemented Design"); // bq
+// [GUI Memory]: 193 MB (+11218kb) [00:00:53]
+// [GUI Memory]: 207 MB (+4285kb) [00:01:20]
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 30, true); // f - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 30, true); // f - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 2,272 MB. GUI used memory: 149 MB. Current time: 5/1/23, 10:05:55 AM CDT
+// Elapsed time: 41 seconds
+selectButton(RDIResource.HTree_COLLAPSE_ALL, "Netlist_collapse_all"); // d
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true); // D - Node
+// [Engine Memory]: 2,278 MB (+563kb) [00:02:53]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("top.vhd", 442, 869); // ac
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 1, true); // D - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 15 seconds
+setFileChooser("C:/Users/bmad4/Documents/LabProject/LabProject.srcs/sources_1/imports/Downloads/PRNG.vhd");
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/bmad4/Documents/LabProject/LabProject.srcs/sources_1/imports/Downloads/PRNG.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PRNG(xoroshiro128plus_arch) (PRNG.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PRNG(xoroshiro128plus_arch) (PRNG.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("PRNG.vhd", 575, 288); // ac
+selectCodeEditor("PRNG.vhd", 583, 300); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,291 MB. GUI used memory: 154 MB. Current time: 5/1/23, 10:07:35 AM CDT
+selectCodeEditor("PRNG.vhd", 605, 334); // ac
+selectCodeEditor("PRNG.vhd", 643, 390); // ac
+selectCodeEditor("PRNG.vhd", 668, 484); // ac
+// Elapsed time: 32 seconds
+selectCodeEditor("PRNG.vhd", 84, 836); // ac
+selectCodeEditor("PRNG.vhd", 192, 835); // ac
+selectCodeEditor("PRNG.vhd", 350, 794); // ac
+selectCodeEditor("PRNG.vhd", 369, 815); // ac
+selectCodeEditor("PRNG.vhd", 454, 864); // ac
+selectCodeEditor("PRNG.vhd", 466, 879); // ac
+selectCodeEditor("PRNG.vhd", 46, 866); // ac
+selectCodeEditor("PRNG.vhd", 435, 867); // ac
+selectCodeEditor("PRNG.vhd", 325, 598); // ac
+selectCodeEditor("PRNG.vhd", 330, 602); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("PRNG.vhd", 118, 1043); // ac
+typeControlKey((HResource) null, "PRNG.vhd", 'c'); // ac
+selectCodeEditor("PRNG.vhd", 174, 246); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 601, 1046); // ac
+selectCodeEditor("top.vhd", 601, 1050, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("top.vhd", 606, 1064); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 131 seconds
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 100 seconds
+selectCodeEditor("top.vhd", 647, 413); // ac
+// Elapsed time: 135 seconds
+selectCodeEditor("top.vhd", 566, 510); // ac
+// Elapsed time: 42 seconds
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("top.vhd", 252, 1006); // ac
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 6, false, false, false, false, false, true); // D - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 852, 260); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 413, 1098); // ac
+selectCodeEditor("top.vhd", 415, 1121); // ac
+selectCodeEditor("top.vhd", 406, 1097); // ac
+selectCodeEditor("top.vhd", 421, 1044); // ac
+selectCodeEditor("top.vhd", 422, 1056); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("top.vhd", 614, 343); // ac
+selectCodeEditor("top.vhd", 614, 359); // ac
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 531, 1013); // ac
+selectCodeEditor("top.vhd", 476, 452); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 5); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 913, 889); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 824, 876); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 827, 861); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 907, 920); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 912, 917); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 914, 904); // ac
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 10:18:11 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 10:18:11 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,311 MB. GUI used memory: 156 MB. Current time: 5/1/23, 10:18:15 AM CDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 410 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5673 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B7F8B4A 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,412 MB. GUI used memory: 185 MB. Current time: 5/1/23, 10:25:38 AM CDT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4564.523 ; gain = 2131.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 4,412 MB (+2118526kb) [00:21:54]
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 35 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 249, 1163); // ac
+selectCodeEditor("top.vhd", 247, 1165); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,437 MB. GUI used memory: 169 MB. Current time: 5/1/23, 10:26:35 AM CDT
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 404, 151); // ac
+selectCodeEditor("top.vhd", 487, 157); // ac
+selectCodeEditor("top.vhd", 324, 1169); // ac
+// Elapsed time: 28 seconds
+selectCodeEditor("top.vhd", 551, 195); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.vhd", 228, 1156); // ac
+selectCodeEditor("top.vhd", 266, 896); // ac
+selectCodeEditor("top.vhd", 321, 1035); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("top.vhd", 401, 636); // ac
+selectCodeEditor("top.vhd", 401, 678); // ac
+selectCodeEditor("top.vhd", 398, 711); // ac
+// [GUI Memory]: 220 MB (+2667kb) [00:24:13]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("top.vhd", 553, 552); // ac
+selectCodeEditor("top.vhd", 541, 701); // ac
+selectCodeEditor("top.vhd", 536, 757); // ac
+selectCodeEditor("top.vhd", 626, 536); // ac
+selectCodeEditor("top.vhd", 664, 636); // ac
+selectCodeEditor("top.vhd", 676, 743); // ac
+selectCodeEditor("top.vhd", 663, 758); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 5); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 937, 331); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 941, 1057); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 10:28:19 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 10:28:19 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 324 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B7F8B4A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 127 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+// [GUI Memory]: 232 MB (+1307kb) [00:34:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 155 MB. Current time: 5/1/23, 10:56:35 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 11:26:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 11:56:36 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 12:26:36 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 12:56:37 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 1:26:37 PM CDT
+// Elapsed time: 11727 seconds
+selectCodeEditor("top.vhd", 440, 759); // ac
+selectCodeEditor("top.vhd", 411, 1019); // ac
+selectCodeEditor("top.vhd", 414, 1048); // ac
+selectCodeEditor("top.vhd", 419, 1089); // ac
+selectCodeEditor("top.vhd", 421, 1063); // ac
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 4); // o
+selectCodeEditor("PRNG.vhd", 449, 473); // ac
+selectCodeEditor("PRNG.vhd", 580, 542); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), comp_uart : UART_top(Behavioral) (UART_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), comp_uart : UART_top(Behavioral) (UART_top.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 6); // o
+selectCodeEditor("UART_top.vhd", 500, 661); // ac
+selectCodeEditor("UART_top.vhd", 263, 614); // ac
+selectCodeEditor("UART_top.vhd", 263, 614, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("UART_top.vhd", 263, 614); // ac
+selectCodeEditor("UART_top.vhd", 597, 612); // ac
+selectCodeEditor("UART_top.vhd", 583, 612); // ac
+typeControlKey((HResource) null, "UART_top.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 577, 654); // ac
+selectCodeEditor("top.vhd", 575, 640); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 575, 639); // ac
+selectCodeEditor("top.vhd", 97, 682); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("top.vhd", 429, 990); // ac
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 4); // o
+selectCodeEditor("PRNG.vhd", 623, 1161); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 163, 664); // ac
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 350, 1019); // ac
+selectCodeEditor("top.vhd", 483, 1053); // ac
+selectCodeEditor("top.vhd", 902, 1078); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 60 seconds
+selectCodeEditor("top.vhd", 119, 534); // ac
+selectCodeEditor("top.vhd", 114, 533); // ac
+selectCodeEditor("top.vhd", 422, 512); // ac
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 433, 507); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 110, 540); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 6); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 713, 111); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 898, 602); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 878, 749); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 880, 1052); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 889, 1052); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 3); // o
+selectCodeEditor("top.vhd", 486, 528); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectCodeEditor("top.vhd", 387, 821); // ac
+selectCodeEditor("top.vhd", 450, 833); // ac
+selectCodeEditor("top.vhd", 447, 805); // ac
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 370, 826); // ac
+selectCodeEditor("top.vhd", 363, 837); // ac
+selectCodeEditor("top.vhd", 395, 897); // ac
+selectCodeEditor("top.vhd", 164, 917); // ac
+selectCodeEditor("top.vhd", 142, 912); // ac
+selectCodeEditor("top.vhd", 167, 913); // ac
+selectCodeEditor("top.vhd", 75, 888); // ac
+selectCodeEditor("top.vhd", 88, 889); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 153 MB. Current time: 5/1/23, 1:56:37 PM CDT
+selectCodeEditor("top.vhd", 251, 890); // ac
+selectCodeEditor("top.vhd", 248, 909); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 337, 941); // ac
+selectCodeEditor("top.vhd", 337, 960); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 4); // o
+selectCodeEditor("UART_top.vhd", 536, 960); // ac
+selectCodeEditor("UART_top.vhd", 1, 489); // ac
+typeControlKey((HResource) null, "UART_top.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 45, 984); // ac
+selectCodeEditor("top.vhd", 634, 1085); // ac
+selectCodeEditor("top.vhd", 641, 1068); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 4); // o
+selectCodeEditor("UART_top.vhd", 396, 737); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 4, 985); // ac
+selectCodeEditor("top.vhd", 5, 937); // ac
+selectCodeEditor("top.vhd", 351, 928); // ac
+selectCodeEditor("top.vhd", 3, 1112); // ac
+selectCodeEditor("top.vhd", 1, 1082); // ac
+selectCodeEditor("top.vhd", 33, 1061); // ac
+selectCodeEditor("top.vhd", 31, 1088); // ac
+selectCodeEditor("top.vhd", 190, 1046); // ac
+selectCodeEditor("top.vhd", 230, 1009); // ac
+selectCodeEditor("top.vhd", 129, 967); // ac
+selectCodeEditor("top.vhd", 276, 961); // ac
+// Elapsed time: 118 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectCodeEditor("PRNG.vhd", 765, 507); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 648, 23); // ac
+selectCodeEditor("top.vhd", 693, 270); // ac
+selectCodeEditor("top.vhd", 678, 194); // ac
+selectCodeEditor("top.vhd", 633, 148); // ac
+// Elapsed time: 46 seconds
+selectCodeEditor("top.vhd", 432, 1013); // ac
+selectCodeEditor("top.vhd", 421, 1045); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("top.vhd", 333, 60); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("top.vhd", 235, 1013); // ac
+selectCodeEditor("top.vhd", 243, 1013); // ac
+selectCodeEditor("top.vhd", 332, 1017); // ac
+selectCodeEditor("top.vhd", 335, 1039); // ac
+selectCodeEditor("top.vhd", 338, 1042); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("top.vhd", 51, 1117); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:02:18 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:02:18 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 134 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B7F8B4A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 2); // o
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 1); // o
+selectCodeEditor("PRNG.vhd", 638, 678); // ac
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 0); // o
+selectCodeEditor("top.vhd", 500, 625); // ac
+selectCodeEditor("top.vhd", 480, 704); // ac
+selectCodeEditor("top.vhd", 466, 760); // ac
+selectCodeEditor("top.vhd", 476, 864); // ac
+selectCodeEditor("top.vhd", 484, 884); // ac
+selectCodeEditor("top.vhd", 167, 765); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:07:59 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:07:59 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 122 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectCodeEditor("top.vhd", 713, 1041); // ac
+selectCodeEditor("top.vhd", 704, 1018); // ac
+selectCodeEditor("top.vhd", 704, 1026); // ac
+selectCodeEditor("top.vhd", 708, 1021); // ac
+selectCodeEditor("top.vhd", 704, 1035); // ac
+selectCodeEditor("top.vhd", 708, 1020); // ac
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 73 seconds
+selectCodeEditor("top.vhd", 1182, 246); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 283 seconds
+selectCodeEditor("PRNG.vhd", 737, 1030); // ac
+selectCodeEditor("PRNG.vhd", 739, 1040); // ac
+selectCodeEditor("PRNG.vhd", 746, 1067); // ac
+selectCodeEditor("PRNG.vhd", 763, 1114); // ac
+selectCodeEditor("PRNG.vhd", 780, 1071); // ac
+selectCodeEditor("PRNG.vhd", 785, 1089); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 42, 631); // ac
+selectCodeEditor("top.vhd", 58, 659); // ac
+selectCodeEditor("top.vhd", 61, 660); // ac
+selectCodeEditor("top.vhd", 56, 666); // ac
+selectCodeEditor("top.vhd", 44, 367); // ac
+selectCodeEditor("top.vhd", 21, 392); // ac
+selectCodeEditor("top.vhd", 243, 384); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectCodeEditor("UART_top.vhd", 21, 380); // ac
+selectCodeEditor("UART_top.vhd", 46, 362); // ac
+selectCodeEditor("UART_top.vhd", 355, 810); // ac
+selectCodeEditor("UART_top.vhd", 353, 1113); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:17:53 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:17:53 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 153 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 80 seconds
+selectCodeEditor("top.vhd", 2238, 393); // ac
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+// Elapsed time: 30 seconds
+selectCodeEditor("top.vhd", 219, 939); // ac
+selectCodeEditor("top.vhd", 398, 942); // ac
+selectCodeEditor("top.vhd", 396, 984); // ac
+selectCodeEditor("top.vhd", 396, 1006); // ac
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 435, 1004); // ac
+selectCodeEditor("top.vhd", 434, 983); // ac
+selectCodeEditor("top.vhd", 429, 1006); // ac
+selectCodeEditor("top.vhd", 426, 1074); // ac
+selectCodeEditor("top.vhd", 425, 1080); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("top.vhd", 365, 1010); // ac
+selectCodeEditor("top.vhd", 367, 1058); // ac
+selectCodeEditor("top.vhd", 367, 1046); // ac
+// Elapsed time: 50 seconds
+selectCodeEditor("top.vhd", 172, 688); // ac
+selectCodeEditor("top.vhd", 313, 678); // ac
+selectCodeEditor("top.vhd", 332, 665); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("top.vhd", 511, 189); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("top.vhd", 658, 204); // ac
+selectCodeEditor("top.vhd", 658, 206); // ac
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 661, 207); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 195, 247); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 506, 1115); // ac
+selectCodeEditor("top.vhd", 507, 1140); // ac
+selectCodeEditor("top.vhd", 308, 565); // ac
+selectCodeEditor("top.vhd", 415, 557); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:26:14 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:26:14 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 2:26:38 PM CDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 180 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 45 seconds
+selectCodeEditor("top.vhd", 590, 1055); // ac
+selectCodeEditor("top.vhd", 593, 1109); // ac
+selectCodeEditor("top.vhd", 338, 1124); // ac
+// Elapsed time: 33 seconds
+selectCodeEditor("top.vhd", 850, 171); // ac
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 372, 897); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 37 seconds
+selectCodeEditor("PRNG.vhd", 437, 1009); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("PRNG.vhd", 420, 983); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("PRNG.vhd", 104, 388); // ac
+selectCodeEditor("PRNG.vhd", 262, 378); // ac
+// Elapsed time: 71 seconds
+selectCodeEditor("PRNG.vhd", 331, 496); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 380, 948); // ac
+selectCodeEditor("top.vhd", 385, 962); // ac
+selectCodeEditor("top.vhd", 393, 986); // ac
+selectCodeEditor("top.vhd", 420, 1049); // ac
+selectCodeEditor("top.vhd", 426, 1086); // ac
+selectCodeEditor("top.vhd", 430, 1118); // ac
+selectCodeEditor("top.vhd", 222, 1124); // ac
+// Elapsed time: 22 seconds
+selectCodeEditor("top.vhd", 506, 438); // ac
+selectCodeEditor("top.vhd", 475, 531); // ac
+selectCodeEditor("top.vhd", 474, 515); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("top.vhd", 387, 884); // ac
+selectCodeEditor("top.vhd", 424, 851); // ac
+selectCodeEditor("top.vhd", 411, 887); // ac
+selectCodeEditor("top.vhd", 586, 914); // ac
+// Elapsed time: 29 seconds
+selectCodeEditor("top.vhd", 89, 838); // ac
+selectCodeEditor("top.vhd", 89, 883); // ac
+selectCodeEditor("top.vhd", 124, 868); // ac
+selectCodeEditor("top.vhd", 132, 863); // ac
+selectCodeEditor("top.vhd", 435, 913); // ac
+selectCodeEditor("top.vhd", 529, 926); // ac
+selectCodeEditor("top.vhd", 542, 909); // ac
+selectCodeEditor("top.vhd", 239, 976); // ac
+selectCodeEditor("top.vhd", 443, 987); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:35:33 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:35:33 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 445 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 70 seconds
+selectCodeEditor("top.vhd", 2055, 144); // ac
+// Elapsed time: 34 seconds
+selectCodeEditor("top.vhd", 243, 888); // ac
+selectCodeEditor("top.vhd", 164, 860); // ac
+selectCodeEditor("top.vhd", 174, 842); // ac
+selectCodeEditor("top.vhd", 179, 887); // ac
+selectCodeEditor("top.vhd", 209, 990); // ac
+selectCodeEditor("top.vhd", 324, 950); // ac
+selectCodeEditor("top.vhd", 402, 950); // ac
+selectCodeEditor("top.vhd", 435, 956); // ac
+selectCodeEditor("top.vhd", 438, 932); // ac
+selectCodeEditor("top.vhd", 421, 998); // ac
+selectCodeEditor("top.vhd", 420, 1020); // ac
+selectCodeEditor("top.vhd", 426, 1039); // ac
+// Elapsed time: 30 seconds
+selectCodeEditor("top.vhd", 367, 945); // ac
+selectCodeEditor("top.vhd", 372, 970); // ac
+selectCodeEditor("top.vhd", 364, 1061); // ac
+selectCodeEditor("top.vhd", 367, 1071); // ac
+selectCodeEditor("top.vhd", 210, 1105); // ac
+selectCodeEditor("top.vhd", 210, 1105); // ac
+selectCodeEditor("top.vhd", 446, 862); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:46:31 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:46:31 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 129 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 46 seconds
+selectCodeEditor("top.vhd", 2333, 638); // ac
+selectCodeEditor("top.vhd", 1076, 869); // ac
+selectCodeEditor("top.vhd", 1076, 868); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 392, 861); // ac
+selectCodeEditor("top.vhd", 225, 872); // ac
+selectCodeEditor("top.vhd", 229, 886); // ac
+selectCodeEditor("top.vhd", 236, 890); // ac
+selectCodeEditor("top.vhd", 236, 887); // ac
+selectCodeEditor("top.vhd", 524, 539); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:50:46 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:50:46 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 155, 532); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+selectCodeEditor("PRNG.vhd", 931, 526); // ac
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+// Elapsed time: 36 seconds
+selectCodeEditor("top.vhd", 383, 456); // ac
+selectCodeEditor("top.vhd", 442, 359); // ac
+selectCodeEditor("top.vhd", 461, 313); // ac
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("top.vhd", 514, 328); // ac
+selectCodeEditor("top.vhd", 496, 672); // ac
+selectCodeEditor("top.vhd", 503, 668); // ac
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:52:44 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:52:44 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 112 seconds
+selectCodeEditor("top.vhd", 537, 535); // ac
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 68 seconds
+selectCodeEditor("top.vhd", 1983, 330); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 2:56:38 PM CDT
+// Elapsed time: 81 seconds
+selectCodeEditor("top.vhd", 248, 513); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 14:58:14 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 14:58:14 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 356 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 23 seconds
+selectCodeEditor("top.vhd", 267, 518); // ac
+selectCodeEditor("top.vhd", 300, 491); // ac
+// Elapsed time: 55 seconds
+selectCodeEditor("top.vhd", 589, 419); // ac
+selectCodeEditor("top.vhd", 593, 429); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("top.vhd", 344, 796); // ac
+selectCodeEditor("top.vhd", 259, 510); // ac
+selectCodeEditor("top.vhd", 250, 512); // ac
+selectCodeEditor("top.vhd", 365, 924); // ac
+selectCodeEditor("top.vhd", 226, 888); // ac
+// Elapsed time: 47 seconds
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 26 seconds
+selectCodeEditor("top.vhd", 77, 524); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 15:07:42 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 15:07:42 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 173 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 51 seconds
+selectCodeEditor("top.vhd", 436, 507); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("top.vhd", 637, 816); // ac
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 15:12:35 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 15:12:35 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 298 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 35 seconds
+selectCodeEditor("top.vhd", 2258, 558); // ac
+selectCodeEditor("top.vhd", 849, 800); // ac
+selectCodeEditor("top.vhd", 848, 901); // ac
+selectCodeEditor("top.vhd", 872, 846); // ac
+selectCodeEditor("top.vhd", 897, 795); // ac
+selectCodeEditor("top.vhd", 899, 822); // ac
+selectCodeEditor("top.vhd", 901, 863); // ac
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// Elapsed time: 17 seconds
+selectCodeEditor("PRNG.vhd", 439, 568); // ac
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 315, 647); // ac
+selectCodeEditor("top.vhd", 315, 650, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("top.vhd", 315, 659); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("top.vhd", 303, 655); // ac
+selectCodeEditor("top.vhd", 303, 655, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("top.vhd", 303, 655); // ac
+selectCodeEditor("top.vhd", 311, 657); // ac
+selectCodeEditor("top.vhd", 334, 649); // ac
+selectCodeEditor("top.vhd", 333, 657); // ac
+selectCodeEditor("top.vhd", 195, 691); // ac
+// Elapsed time: 36 seconds
+selectCodeEditor("top.vhd", 345, 889); // ac
+selectCodeEditor("top.vhd", 343, 889); // ac
+selectCodeEditor("top.vhd", 307, 907); // ac
+selectCodeEditor("top.vhd", 401, 905); // ac
+selectCodeEditor("top.vhd", 369, 931); // ac
+selectCodeEditor("top.vhd", 371, 943); // ac
+selectCodeEditor("top.vhd", 406, 907); // ac
+selectCodeEditor("top.vhd", 309, 915); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 402, 491); // ac
+selectCodeEditor("top.vhd", 414, 536); // ac
+selectCodeEditor("top.vhd", 416, 513); // ac
+selectCodeEditor("top.vhd", 381, 998); // ac
+selectCodeEditor("top.vhd", 343, 831); // ac
+selectCodeEditor("top.vhd", 613, 829); // ac
+selectCodeEditor("top.vhd", 428, 489); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 293, 1207); // ac
+selectCodeEditor("top.vhd", 362, 1207); // ac
+selectCodeEditor("top.vhd", 321, 863); // ac
+selectCodeEditor("top.vhd", 391, 918); // ac
+selectCodeEditor("top.vhd", 444, 918); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 196, 885); // ac
+selectCodeEditor("top.vhd", 219, 839); // ac
+selectCodeEditor("top.vhd", 195, 884); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("top.vhd", 188, 946); // ac
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+// Elapsed time: 48 seconds
+selectCodeEditor("top.vhd", 202, 915); // ac
+selectCodeEditor("top.vhd", 207, 911); // ac
+selectCodeEditor("top.vhd", 344, 904); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 424, 980); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 15:23:56 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 15:23:56 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 159 MB. Current time: 5/1/23, 3:26:38 PM CDT
+// Elapsed time: 47 seconds
+selectCodeEditor("top.vhd", 863, 424); // ac
+// Elapsed time: 23 seconds
+selectCodeEditor("top.vhd", 228, 543); // ac
+// Elapsed time: 69 seconds
+selectCodeEditor("top.vhd", 249, 541); // ac
+// Elapsed time: 23 seconds
+selectCodeEditor("top.vhd", 264, 566); // ac
+selectCodeEditor("top.vhd", 254, 557); // ac
+selectCodeEditor("top.vhd", 250, 540); // ac
+selectCodeEditor("top.vhd", 606, 287); // ac
+selectCodeEditor("top.vhd", 583, 297); // ac
+selectCodeEditor("top.vhd", 588, 317); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 15:29:17 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 15:29:17 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 116 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 3); // o
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectCodeEditor("PRNG.vhd", 778, 568); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("PRNG.vhd", 486, 554); // ac
+selectCodeEditor("PRNG.vhd", 300, 546); // ac
+selectCodeEditor("PRNG.vhd", 324, 548); // ac
+selectCodeEditor("PRNG.vhd", 393, 564); // ac
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 36 seconds
+selectCodeEditor("PRNG.vhd", 125, 577); // ac
+selectCodeEditor("PRNG.vhd", 444, 558); // ac
+typeControlKey((HResource) null, "PRNG.vhd", 'c'); // ac
+selectCodeEditor("PRNG.vhd", 317, 536); // ac
+typeControlKey((HResource) null, "PRNG.vhd", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PRNG.vhd", 839, 531); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // o
+selectCodeEditor("top.vhd", 420, 504); // ac
+selectCodeEditor("top.vhd", 411, 511); // ac
+selectCodeEditor("top.vhd", 397, 521); // ac
+selectCodeEditor("top.vhd", 383, 530); // ac
+selectCodeEditor("top.vhd", 402, 482); // ac
+selectCodeEditor("top.vhd", 451, 460); // ac
+selectCodeEditor("top.vhd", 729, 347); // ac
+selectCodeEditor("top.vhd", 744, 350); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 223, 390); // ac
+selectCodeEditor("top.vhd", 239, 483); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 15:33:29 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 15:33:29 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 148 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 61 seconds
+selectCodeEditor("top.vhd", 2561, 218); // ac
+// Elapsed time: 110 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 3:56:39 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 4:26:39 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 4:56:39 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 158 MB. Current time: 5/1/23, 5:26:40 PM CDT
+// Elapsed time: 6995 seconds
+selectCodeEditor("top.vhd", 507, 661); // ac
+selectCodeEditor("top.vhd", 447, 543); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 4); // o
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), comp_uart : UART_top(Behavioral) (UART_top.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), comp_uart : UART_top(Behavioral) (UART_top.vhd), comp_rx : UART_RX(diagram) (UART_RX.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd), comp_uart : UART_top(Behavioral) (UART_top.vhd), comp_rx : UART_RX(diagram) (UART_RX.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("UART_RX.vhd", 264, 600); // ac
+selectCodeEditor("UART_RX.vhd", 309, 698); // ac
+selectCodeEditor("UART_RX.vhd", 335, 709); // ac
+selectCodeEditor("UART_RX.vhd", 202, 368); // ac
+selectCodeEditor("UART_RX.vhd", 46, 264); // ac
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 388, 60); // ac
+selectCodeEditor("top.vhd", 379, 81); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 304, 88); // ac
+selectCodeEditor("top.vhd", 156, 80); // ac
+selectCodeEditor("top.vhd", 176, 91); // ac
+selectCodeEditor("top.vhd", 167, 91); // ac
+selectCodeEditor("top.vhd", 61, 82); // ac
+selectCodeEditor("top.vhd", 47, 83); // ac
+selectCodeEditor("top.vhd", 55, 84); // ac
+selectCodeEditor("top.vhd", 187, 86); // ac
+selectCodeEditor("top.vhd", 89, 80); // ac
+selectCodeEditor("top.vhd", 57, 86); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 7); // o
+selectCodeEditor("UART_RX.vhd", 590, 315); // ac
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 174, 107); // ac
+selectCodeEditor("top.vhd", 166, 140); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 35, 137); // ac
+selectCodeEditor("top.vhd", 101, 132); // ac
+selectCodeEditor("top.vhd", 111, 120); // ac
+selectCodeEditor("top.vhd", 667, 142); // ac
+selectCodeEditor("top.vhd", 351, 80); // ac
+selectCodeEditor("top.vhd", 367, 86); // ac
+selectCodeEditor("top.vhd", 415, 83); // ac
+selectCodeEditor("top.vhd", 549, 82); // ac
+selectCodeEditor("top.vhd", 653, 86); // ac
+selectCodeEditor("top.vhd", 814, 97); // ac
+selectCodeEditor("top.vhd", 639, 115); // ac
+selectCodeEditor("top.vhd", 397, 94); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("top.vhd", 416, 463); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("top.vhd", 991, 560); // ac
+selectCodeEditor("top.vhd", 566, 456); // ac
+selectCodeEditor("top.vhd", 570, 465); // ac
+selectCodeEditor("top.vhd", 572, 471); // ac
+selectCodeEditor("top.vhd", 572, 482); // ac
+selectCodeEditor("top.vhd", 661, 457); // ac
+selectCodeEditor("top.vhd", 645, 459); // ac
+selectCodeEditor("top.vhd", 640, 457); // ac
+// Elapsed time: 18 seconds
+selectCodeEditor("top.vhd", 527, 307); // ac
+selectCodeEditor("top.vhd", 157, 306); // ac
+selectCodeEditor("top.vhd", 132, 262); // ac
+selectCodeEditor("top.vhd", 147, 313); // ac
+selectCodeEditor("top.vhd", 1227, 267); // ac
+// Elapsed time: 27 seconds
+selectCodeEditor("top.vhd", 513, 323); // ac
+selectCodeEditor("top.vhd", 550, 323); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 736, 313); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 7); // o
+selectCodeEditor("UART_RX.vhd", 815, 500); // ac
+selectCodeEditor("UART_RX.vhd", 809, 514); // ac
+selectCodeEditor("UART_RX.vhd", 765, 540); // ac
+selectCodeEditor("UART_RX.vhd", 337, 704); // ac
+selectCodeEditor("UART_RX.vhd", 292, 305); // ac
+typeControlKey((HResource) null, "UART_RX.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 141, 520); // ac
+selectCodeEditor("top.vhd", 134, 533); // ac
+selectCodeEditor("top.vhd", 14, 647); // ac
+selectCodeEditor("top.vhd", 193, 657); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 174, 907); // ac
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 417, 963); // ac
+selectCodeEditor("top.vhd", 425, 918); // ac
+selectCodeEditor("top.vhd", 446, 951); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectCodeEditor("UART_RX.vhd", 464, 236); // ac
+selectCodeEditor("UART_RX.vhd", 475, 262); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 119, 887); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+// Elapsed time: 23 seconds
+selectCodeEditor("top.vhd", 567, 704); // ac
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 302, 760); // ac
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 201, 794); // ac
+selectCodeEditor("top.vhd", 450, 787); // ac
+// Elapsed time: 22 seconds
+selectCodeEditor("top.vhd", 560, 840); // ac
+selectCodeEditor("top.vhd", 566, 873); // ac
+selectCodeEditor("top.vhd", 569, 888); // ac
+selectCodeEditor("top.vhd", 555, 857); // ac
+selectCodeEditor("top.vhd", 555, 866); // ac
+selectCodeEditor("top.vhd", 562, 890); // ac
+// Elapsed time: 56 seconds
+selectCodeEditor("top.vhd", 467, 666); // ac
+selectCodeEditor("top.vhd", 411, 733); // ac
+// Elapsed time: 43 seconds
+selectCodeEditor("top.vhd", 311, 970); // ac
+// Elapsed time: 125 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 6); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 400, 879); // ac
+selectCodeEditor("top.vhd", 511, 851); // ac
+selectCodeEditor("top.vhd", 82, 214); // ac
+selectCodeEditor("top.vhd", 92, 219); // ac
+selectCodeEditor("top.vhd", 88, 321); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 7); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1, 590); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 10, 590); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 186, 574); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+selectCodeEditor("top.vhd", 519, 675); // ac
+selectCodeEditor("top.vhd", 519, 656); // ac
+selectCodeEditor("top.vhd", 431, 839); // ac
+selectCodeEditor("top.vhd", 433, 822); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("top.vhd", 275, 43); // ac
+selectCodeEditor("top.vhd", 274, 56); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 312, 963); // ac
+selectCodeEditor("top.vhd", 374, 924); // ac
+// Elapsed time: 73 seconds
+selectCodeEditor("top.vhd", 603, 550); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("top.vhd", 528, 755); // ac
+selectCodeEditor("top.vhd", 577, 674); // ac
+selectCodeEditor("top.vhd", 583, 697); // ac
+selectCodeEditor("top.vhd", 582, 670); // ac
+selectCodeEditor("top.vhd", 585, 671); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 17:48:12 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 17:48:12 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("top.vhd", 20, 483); // ac
+selectCodeEditor("top.vhd", 157, 603); // ac
+selectCodeEditor("top.vhd", 249, 912); // ac
+selectCodeEditor("top.vhd", 250, 942); // ac
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 48 seconds
+selectCodeEditor("top.vhd", 553, 525); // ac
+selectCodeEditor("top.vhd", 577, 559); // ac
+selectCodeEditor("top.vhd", 577, 576); // ac
+selectCodeEditor("top.vhd", 577, 598); // ac
+selectCodeEditor("top.vhd", 577, 603); // ac
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 150 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bq
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B7F8B4A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 709, 463); // ac
+selectCodeEditor("top.vhd", 421, 685); // ac
+selectCodeEditor("top.vhd", 485, 1058); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 710, 596); // ac
+selectCodeEditor("top.vhd", 710, 618); // ac
+selectCodeEditor("top.vhd", 718, 692); // ac
+selectCodeEditor("top.vhd", 720, 656); // ac
+selectCodeEditor("top.vhd", 718, 708); // ac
+selectCodeEditor("top.vhd", 716, 690); // ac
+selectCodeEditor("top.vhd", 714, 730); // ac
+selectCodeEditor("top.vhd", 706, 647); // ac
+selectCodeEditor("top.vhd", 711, 635); // ac
+selectCodeEditor("top.vhd", 711, 635, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("top.vhd", 712, 619); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("top.vhd", 333, 825); // ac
+selectCodeEditor("top.vhd", 351, 818); // ac
+selectCodeEditor("top.vhd", 351, 850); // ac
+selectCodeEditor("top.vhd", 350, 873); // ac
+selectCodeEditor("top.vhd", 350, 890); // ac
+selectCodeEditor("top.vhd", 511, 871); // ac
+selectCodeEditor("top.vhd", 581, 873); // ac
+selectCodeEditor("top.vhd", 545, 882); // ac
+selectCodeEditor("top.vhd", 496, 957); // ac
+selectCodeEditor("top.vhd", 503, 985); // ac
+selectCodeEditor("top.vhd", 520, 1000); // ac
+selectCodeEditor("top.vhd", 536, 1023); // ac
+selectCodeEditor("top.vhd", 552, 1045); // ac
+selectCodeEditor("top.vhd", 559, 989); // ac
+selectCodeEditor("top.vhd", 281, 280); // ac
+selectCodeEditor("top.vhd", 326, 328); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 616, 787); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 650, 978); // ac
+selectCodeEditor("top.vhd", 573, 919); // ac
+selectCodeEditor("top.vhd", 579, 938); // ac
+// Elapsed time: 20 seconds
+selectCodeEditor("top.vhd", 580, 964); // ac
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 450, 1124); // ac
+selectCodeEditor("top.vhd", 450, 1136); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 370, 1168); // ac
+selectCodeEditor("top.vhd", 408, 1163); // ac
+selectCodeEditor("top.vhd", 338, 1162); // ac
+selectCodeEditor("top.vhd", 346, 939); // ac
+selectCodeEditor("top.vhd", 344, 948); // ac
+selectCodeEditor("top.vhd", 338, 961); // ac
+selectCodeEditor("top.vhd", 343, 1159); // ac
+selectCodeEditor("top.vhd", 377, 1155); // ac
+selectCodeEditor("top.vhd", 398, 1100); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("top.vhd", 410, 871); // ac
+selectCodeEditor("top.vhd", 85, 340); // ac
+selectCodeEditor("top.vhd", 368, 582); // ac
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+selectCodeEditor("top.vhd", 440, 583); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+selectCodeEditor("top.vhd", 99, 614); // ac
+selectCodeEditor("top.vhd", 165, 615); // ac
+selectCodeEditor("top.vhd", 409, 601); // ac
+selectCodeEditor("top.vhd", 415, 627); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("top.vhd", 88, 407); // ac
+selectCodeEditor("top.vhd", 139, 462); // ac
+selectCodeEditor("top.vhd", 137, 466); // ac
+selectCodeEditor("top.vhd", 87, 430); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 253, 791); // ac
+selectCodeEditor("top.vhd", 257, 787); // ac
+selectCodeEditor("top.vhd", 111, 634); // ac
+selectCodeEditor("top.vhd", 275, 642); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.vhd", 329, 617); // ac
+selectCodeEditor("top.vhd", 337, 629); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.vhd", 368, 639); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 164, 633); // ac
+selectCodeEditor("top.vhd", 192, 674); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,452 MB. GUI used memory: 163 MB. Current time: 5/1/23, 5:56:40 PM CDT
+selectCodeEditor("top.vhd", 261, 642); // ac
+selectCodeEditor("top.vhd", 401, 651); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("top.vhd", 328, 632); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("top.vhd", 522, 645); // ac
+selectCodeEditor("top.vhd", 517, 661); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 1); // o
+selectCodeEditor("UART_top.vhd", 620, 588); // ac
+selectCodeEditor("UART_top.vhd", 164, 1080); // ac
+selectCodeEditor("UART_top.vhd", 147, 1062); // ac
+selectCodeEditor("UART_top.vhd", 96, 1035); // ac
+selectCodeEditor("UART_top.vhd", 282, 1086); // ac
+selectCodeEditor("UART_top.vhd", 291, 1059); // ac
+selectCodeEditor("UART_top.vhd", 126, 442); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 118, 500); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 3); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 820, 237); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 1); // o
+selectCodeEditor("UART_top.vhd", 128, 437); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+selectCodeEditor("top.vhd", 531, 914); // ac
+selectCodeEditor("top.vhd", 530, 988); // ac
+selectCodeEditor("top.vhd", 526, 960); // ac
+selectCodeEditor("top.vhd", 400, 932); // ac
+selectCodeEditor("top.vhd", 134, 773); // ac
+selectCodeEditor("top.vhd", 147, 769); // ac
+selectCodeEditor("top.vhd", 155, 765); // ac
+selectCodeEditor("top.vhd", 142, 789); // ac
+selectCodeEditor("top.vhd", 131, 795); // ac
+selectCodeEditor("top.vhd", 186, 789); // ac
+selectCodeEditor("top.vhd", 233, 789); // ac
+selectCodeEditor("top.vhd", 164, 782); // ac
+selectCodeEditor("top.vhd", 439, 785); // ac
+selectCodeEditor("top.vhd", 509, 785); // ac
+selectCodeEditor("top.vhd", 516, 757); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// Elapsed time: 30 seconds
+typeControlKey((HResource) null, "top.vhd", 'c'); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("top.vhd", 113, 815); // ac
+selectCodeEditor("top.vhd", 451, 848); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 126, 1065); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_top.vhd", 4); // o
+selectCodeEditor("UART_top.vhd", 123, 465); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 5); // o
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("top.vhd", 321, 679); // ac
+selectCodeEditor("top.vhd", 360, 697); // ac
+selectCodeEditor("top.vhd", 389, 896); // ac
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 18:00:08 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 18:00:08 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("top.vhd", 502, 718); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 181 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B7F8B4A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 621, 969); // ac
+selectCodeEditor("top.vhd", 627, 908); // ac
+selectCodeEditor("top.vhd", 629, 932); // ac
+selectCodeEditor("top.vhd", 604, 1030); // ac
+selectCodeEditor("top.vhd", 740, 1020); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 360, 1012); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 550, 947); // ac
+selectCodeEditor("top.vhd", 545, 974); // ac
+selectCodeEditor("top.vhd", 579, 519); // ac
+selectCodeEditor("top.vhd", 643, 377); // ac
+selectCodeEditor("top.vhd", 641, 361); // ac
+selectCodeEditor("top.vhd", 652, 307); // ac
+selectCodeEditor("top.vhd", 652, 368); // ac
+selectCodeEditor("top.vhd", 652, 383); // ac
+selectCodeEditor("top.vhd", 669, 747); // ac
+selectCodeEditor("top.vhd", 666, 761); // ac
+selectCodeEditor("top.vhd", 672, 804); // ac
+selectCodeEditor("top.vhd", 675, 792); // ac
+selectCodeEditor("top.vhd", 675, 757); // ac
+selectCodeEditor("top.vhd", 680, 739); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PRNG.vhd", 0); // o
+selectCodeEditor("PRNG.vhd", 451, 532); // ac
+selectCodeEditor("PRNG.vhd", 741, 534); // ac
+selectCodeEditor("PRNG.vhd", 889, 530); // ac
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX.vhd", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 608, 754); // ac
+selectCodeEditor("top.vhd", 579, 764); // ac
+selectCodeEditor("top.vhd", 522, 838); // ac
+typeControlKey((HResource) null, "top.vhd", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("top.vhd", 666, 694); // ac
+selectCodeEditor("top.vhd", 673, 749); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("top.vhd", 309, 610); // ac
+selectCodeEditor("top.vhd", 527, 372); // ac
+selectCodeEditor("top.vhd", 524, 378); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 4); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 821, 460); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 853, 465); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 851, 469); // ac
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 18:06:15 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 18:06:15 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 127 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // o
+selectCodeEditor("top.vhd", 508, 453); // ac
+selectCodeEditor("top.vhd", 519, 618); // ac
+selectCodeEditor("top.vhd", 531, 628); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 545, 628); // ac
+selectCodeEditor("top.vhd", 294, 484); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top.vhd", 544, 548); // ac
+selectCodeEditor("top.vhd", 552, 583); // ac
+selectCodeEditor("top.vhd", 551, 318); // ac
+selectCodeEditor("top.vhd", 551, 326); // ac
+selectCodeEditor("top.vhd", 610, 587); // ac
+selectCodeEditor("top.vhd", 620, 566); // ac
+selectCodeEditor("top.vhd", 619, 591); // ac
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 18:09:31 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 18:09:31 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 388 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 25 seconds
+selectCodeEditor("top.vhd", 684, 847); // ac
+selectCodeEditor("top.vhd", 679, 631); // ac
+selectCodeEditor("top.vhd", 676, 574); // ac
+selectCodeEditor("top.vhd", 219, 544); // ac
+selectCodeEditor("top.vhd", 398, 534); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.srcs/utils_1/imports/synth_1/UART_top.dcp with file C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/top.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon May  1 18:16:48 2023] Launched synth_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/synth_1/runme.log [Mon May  1 18:16:48 2023] Launched impl_1... Run output will be captured here: C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 168 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/bmad4/Documents/UART_RxTx/UART_RxTx.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
