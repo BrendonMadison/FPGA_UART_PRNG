@@ -34,3 +34,11 @@ Both distributions were fit using Binned Least Log Likelihood for 1M samples usi
 The main limit to execution speed is the USB port latency. For Windows this can only be reduced to 1 ms. So 1M samples takes 1000 seconds. The FPGA used for this demo was the Nexys A7 where a max execution time "worse case scenario" of ~4.5 ns was found using timing analysis. This was smaller than the Nexys A7's clock period (10 ns) so the program is able to compute without issues even under the worst case scenario. 
 
 A baud rate of 960kHz was used though 152kHz and 9.6kHz were tested too. As such the maximum data rate, assuming the latency issues were resolved, would be limitted by the baud rate. For 960kHz and including that the PC must query the FPGA to send data, the maximum data rate would be ~930 kb/s .
+
+# To do
+
+1.) Include more random number types as it fairly easy to generate more RNG types once you have Ru or Rg. Especially a beta random number would be very useful.
+
+2.) Figure out way past the latency issue? Unsure if I can do anything with that. It is the largest kill to speed...
+
+3.) Given a beta and gaussian random number generator could create a circuit for CIRCE-esque generation for beam energy distribution of particle beams.
