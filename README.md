@@ -31,4 +31,6 @@ Both distributions were fit using Binned Least Log Likelihood for 1M samples usi
 
 # Speed
 
-The main limit to execution speed is the USB port latency. For Windows this can only be reduced to 1 ms. So 1M samples takes 1000 seconds. The FPGA used for this demo was the Nexys A7 where a max execution time "worse case scenario" of ~4.5 ns was found using timing analysis. This was smaller than the Nexys A7's clock period (10 ns) so the program is able to compute without issues even under the worst case scenario. A baud rate of 960kHz was used though 152kHz and 9.6kHz were tested too. As such the maximum data rate, assuming the latency issues were resolved, would be limitted by the baud rate. For 960kHz and including that the PC must query the FPGA to send data, the maximum data rate would be ~930 kb/s .
+The main limit to execution speed is the USB port latency. For Windows this can only be reduced to 1 ms. So 1M samples takes 1000 seconds. The FPGA used for this demo was the Nexys A7 where a max execution time "worse case scenario" of ~4.5 ns was found using timing analysis. This was smaller than the Nexys A7's clock period (10 ns) so the program is able to compute without issues even under the worst case scenario. 
+
+A baud rate of 960kHz was used though 152kHz and 9.6kHz were tested too. As such the maximum data rate, assuming the latency issues were resolved, would be limitted by the baud rate. For 960kHz and including that the PC must query the FPGA to send data, the maximum data rate would be ~930 kb/s .
